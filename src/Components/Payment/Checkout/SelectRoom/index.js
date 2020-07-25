@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Aux from "../../../../hoc/Aux";
 import Card from "./Card";
 import Data from "./Data";
 const Grid = Data.map((item, index) => {
@@ -26,7 +25,7 @@ const Grid = Data.map((item, index) => {
 class SelectRoom extends Component {
   render() {
     return (
-      <Aux>
+      <div>
         <div className="container mt-3">
           <div className="row ">
             <div className="col-lg-12">
@@ -37,7 +36,7 @@ class SelectRoom extends Component {
           </div>
           {Grid}
         </div>
-      </Aux>
+      </div>
     );
   }
 }

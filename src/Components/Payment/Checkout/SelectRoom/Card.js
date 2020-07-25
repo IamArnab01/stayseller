@@ -3,29 +3,28 @@ import Size from "../../../../Assets/img/size.png";
 import King from "../../../../Assets/img/king.png";
 import Car from "../../../../Assets/img/car.png";
 import Wifi from "../../../../Assets/img/wifi2.png";
-import Aux from "../../../../hoc/Aux";
 import { Modal } from "react-bootstrap";
 import ChangeRoom from "../../../Popup/ChangeRoom/ChangeRoom";
 
 class Card extends Component {
   state = {
-    show: false
+    show: false,
   };
 
   handleShow = () => {
     this.setState({
-      show: !this.state.show
+      show: !this.state.show,
     });
   };
 
   handleClose = () => {
     this.setState({
-      show: !this.state.show
+      show: !this.state.show,
     });
   };
   render() {
     return (
-      <Aux>
+      <div>
         <div className="container px-30 pt-4">
           <div className="row th-card">
             <div className="col-md-12 th-bg-grey">
@@ -157,7 +156,7 @@ class Card extends Component {
             <ChangeRoom show={this.state.show} />
           </Modal.Body>
         </Modal>
-      </Aux>
+      </div>
     );
   }
 }

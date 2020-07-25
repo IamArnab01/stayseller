@@ -3,14 +3,13 @@ import { Switch, Route } from "react-router-dom";
 import Loadable from "react-loadable";
 
 import Loader from "./Loader/index";
-import Aux from "../hoc/Aux";
 import routes from "../routes";
 import Header from "./Layout/Header/index";
 import Footer from "./Layout/Footer/index";
 
 const Home = Loadable({
   loader: () => import("../Components/Home/index"),
-  loading: Loader
+  loading: Loader,
 });
 
 class App extends Component {
@@ -22,13 +21,13 @@ class App extends Component {
           path={route.path}
           exact={route.exact}
           name={route.name}
-          render={props => <route.component {...props} />}
+          render={(props) => <route.component {...props} />}
         />
       ) : null;
     });
 
     return (
-      <Aux>
+      <div>
         <Header />
         <Suspense fallback={<Loader />}>
           <Switch>
@@ -37,7 +36,7 @@ class App extends Component {
           </Switch>
         </Suspense>
         <Footer />
-      </Aux>
+      </div>
     );
   }
 }

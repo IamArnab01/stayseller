@@ -1,29 +1,28 @@
 import React, { Component } from "react";
-import Aux from "../../../hoc/Aux";
 import Hotel from "../../../Assets/img/header.png";
 import { Modal } from "react-bootstrap";
 import ImgModal from "../../Popup/DetailPage/Modal";
 
 class ScrollBar extends Component {
   state = {
-    show: false
+    show: false,
   };
 
   handleShow = () => {
     this.setState({
-      show: !this.state.show
+      show: !this.state.show,
     });
   };
 
   handleClose = () => {
     this.setState({
-      show: !this.state.show
+      show: !this.state.show,
     });
   };
 
   render() {
     return (
-      <Aux>
+      <div>
         <div className="d-sm-none" style={{ padding: "10px" }}>
           <div className="mob-scroll-bar ">
             <div>
@@ -67,7 +66,7 @@ class ScrollBar extends Component {
             <ImgModal show={this.state.show} />
           </Modal.Body>
         </Modal>
-      </Aux>
+      </div>
     );
   }
 }

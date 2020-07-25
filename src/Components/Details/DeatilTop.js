@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import Aux from "../../hoc/Aux";
 import Header from "../../Assets/img/header.png";
 class Top extends Component {
   render() {
     return (
-      <Aux>
+      <div>
         <section
           className="bgimage"
           style={{ backgroundImage: `url(${Header})` }}
@@ -16,7 +15,7 @@ class Top extends Component {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                height: "70vh"
+                height: "70vh",
               }}
             >
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -87,7 +86,7 @@ class Top extends Component {
             </div>
           </div>
         </div>
-      </Aux>
+      </div>
     );
   }
 }

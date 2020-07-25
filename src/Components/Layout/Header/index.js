@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import Logo from "../../../Assets/img/logo.png";
-import Aux from "../../../hoc/Aux";
 class Header extends Component {
   render() {
     return (
-      <Aux>
+      <div>
         <nav className="navbar navbar-light th-bg-white sticky-top">
           <div className="container">
             <a className="navbar-brand" href=" ">
@@ -22,7 +21,7 @@ class Header extends Component {
             </div>
           </div>
         </nav>
-      </Aux>
+      </div>
     );
   }
 }

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Aux from "../../../hoc/Aux";
 import AC from "../../../Assets/img/ac2.png";
 import Food from "../../../Assets/img/food.png";
 import Swim from "../../../Assets/img/swim.png";
@@ -16,7 +15,7 @@ import Laundry from "../../../Assets/img/laundry.png";
 class Amenities extends Component {
   render() {
     return (
-      <Aux>
+      <div>
         <div>
           <div className="col-lg-12">
             <div className="row d-flex justify-content-between align-items-center">
@@ -351,7 +350,7 @@ class Amenities extends Component {
             </div>
           </div>
         </div>
-      </Aux>
+      </div>
     );
   }
 }

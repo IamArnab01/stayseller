@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import Aux from "../../../hoc/Aux";
 import Img from "../../../Assets/img/car2.png";
 class Summary extends Component {
   render() {
     return (
-      <Aux>
+      <div>
         <div className="container mt-5">
           <div className="row th-card ">
             <div className="col-lg-5 p-4">
@@ -45,7 +44,7 @@ class Summary extends Component {
               style={{
                 border: "1px solid #EDEEF0",
                 boxSizing: "border-box",
-                borderRadius: "0px 3px 3px 0px"
+                borderRadius: "0px 3px 3px 0px",
               }}
             >
               <div className="th-lt-black th-20 th-bold pb-3">
@@ -131,7 +130,7 @@ class Summary extends Component {
             </div>
           </div>
         </div>
-      </Aux>
+      </div>
     );
   }
 }

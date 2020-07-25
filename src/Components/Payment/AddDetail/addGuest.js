@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import Aux from "../../../hoc/Aux";
 class AddGuest extends Component {
   render() {
     return (
-      <Aux>
+      <div>
         <div className="container px-30 mt-3">
           <div className="row">
             <div className="th-48 th-bold th-black pt-3 pb-2">
@@ -124,7 +123,7 @@ class AddGuest extends Component {
             </div>
           </div>
         </div>
-      </Aux>
+      </div>
     );
   }
 }

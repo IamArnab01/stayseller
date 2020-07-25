@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Aux from "../../../hoc/Aux";
 import Image from "../../../Assets/img/img3.png";
 import Size from "../../../Assets/img/size.png";
 import King from "../../../Assets/img/king.png";
@@ -9,18 +8,18 @@ import Detail from "./RoomDetail";
 import data from "./DetailData";
 class Card extends Component {
   state = {
-    show: false
+    show: false,
   };
 
   toggleShow = () => {
     this.setState({
-      show: !this.state.show
+      show: !this.state.show,
     });
   };
 
   render() {
     return (
-      <Aux>
+      <div>
         <div className="py-4">
           <div className="row th-card align-items-center">
             <div className="col-lg-4 pr-0 pl-0">
@@ -210,7 +209,7 @@ class Card extends Component {
             ) : null}
           </div>
         </div>
-      </Aux>
+      </div>
     );
   }
 }

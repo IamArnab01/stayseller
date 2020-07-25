@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Aux from "../../../hoc/Aux";
 import ScrollBar from "./ScrollBar";
 import Grid from "./Grid";
 import Size from "../../../Assets/img/size.png";
@@ -13,24 +12,24 @@ import { Modal } from "react-bootstrap";
 import Amenities from "../../Popup/DetailPage/Amenities";
 class Highlights extends Component {
   state = {
-    show: false
+    show: false,
   };
 
   handleShow = () => {
     this.setState({
-      show: !this.state.show
+      show: !this.state.show,
     });
   };
 
   handleClose = () => {
     this.setState({
-      show: !this.state.show
+      show: !this.state.show,
     });
   };
 
   render() {
     return (
-      <Aux>
+      <div>
         <div className="container th-card">
           <div className="row ">
             <div className="col-lg-6 p-4">
@@ -130,7 +129,7 @@ class Highlights extends Component {
             <Amenities show={this.state.show} />
           </Modal.Body>
         </Modal>
-      </Aux>
+      </div>
     );
   }
 }

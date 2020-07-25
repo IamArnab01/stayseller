@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Aux from "../../../hoc/Aux";
 import Card from "./Card";
 import Data from "./Data";
 
@@ -30,7 +29,7 @@ const Grid = Data.map((item, index) => {
 class ChangeRoomPopUp extends Component {
   render() {
     return (
-      <Aux>
+      <div>
         <div className="modal-header" style={{ borderBottom: "none" }}>
           <h5 className="modal-title th-36">Select Room</h5>
         </div>
@@ -39,7 +38,7 @@ class ChangeRoomPopUp extends Component {
           {/* grid card */}
           {Grid}
         </div>
-      </Aux>
+      </div>
     );
   }
 }

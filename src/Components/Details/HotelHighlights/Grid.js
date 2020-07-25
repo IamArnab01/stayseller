@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import Aux from "../../../hoc/Aux";
 import Hotel from "../../../Assets/img/header.png";
 class Grid extends Component {
   render() {
     return (
-      <Aux>
+      <div>
         <div
           className="col-lg-6 px-5 pt-5  d-sm-block d-none"
           style={{ maxHeight: "90vh", overflowY: "scroll" }}
@@ -122,7 +121,7 @@ class Grid extends Component {
             </div>
           </div>
         </div>
-      </Aux>
+      </div>
     );
   }
 }

@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import Logo from "../../../Assets/img/logo.png";
-import Aux from "../../../hoc/Aux";
 class Footer extends Component {
   render() {
     return (
-      <Aux>
+      <div>
         {/* web version
          */}
         <div className="th-bg-grey py-5 d-sm-block d-none">
@@ -70,7 +69,7 @@ class Footer extends Component {
             </div>
           </div>
         </div>
-      </Aux>
+      </div>
     );
   }
 }

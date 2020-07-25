@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Aux from "../../../hoc/Aux";
 import Card1 from "./Card1";
 import Card2 from "./Card2";
 import Data1 from "./Data1";
@@ -22,7 +21,7 @@ const Grid = Data2.map((item, index) => {
 class Hotel extends Component {
   render() {
     return (
-      <Aux>
+      <di>
         <div className="container">
           <div className="row th-mob-txt-center">
             <div className="col-md-12 pt-5">
@@ -42,7 +41,7 @@ class Hotel extends Component {
         <div className="container py-2 px-30">
           <div className="row">{Grid}</div>
         </div>
-      </Aux>
+      </di>
     );
   }
 }
